@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:background="@drawable/back3"
+    tools:context=".StartActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginTop="100dp">
+       <TextView
+           android:id="@+id/txtWelcome"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Math Game for Kids"
+           android:gravity="center"
+           android:textColor="#D8807A"
+           android:textStyle="bold"
+           android:textSize= "35sp"
+           android:fontFamily="@font/sinethar"
+           android:layout_marginTop="50dp"
+
+           />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="30dp"
+           android:layout_marginTop="50dp"
+           android:gravity="center"
+           android:orientation="horizontal">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="15dp"
+        android:src="@drawable/sum"
+        android:id="@+id/imgAdd"
+        android:pointerIcon="hand"
+        />
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_marginHorizontal="15dp"
+               android:src="@drawable/subtract"
+               android:id="@+id/imgSubtract"
+               android:pointerIcon="hand"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="30dp"
+           android:layout_marginTop="30dp"
+           android:gravity="center"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_marginHorizontal="15dp"
+               android:src="@drawable/multiply"
+               android:id="@+id/imgMultiply"
+               android:pointerIcon="hand"
+               />
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_marginHorizontal="15dp"
+               android:src="@drawable/divide"
+               android:id="@+id/imgDivide"
+               android:pointerIcon="hand"
+               />
+       </LinearLayout>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginHorizontal="40dp"
+           android:layout_marginTop="40dp"
+           android:id="@+id/btn_history"
+           android:background="@drawable/round_button"
+           android:fontFamily="@font/summer_calling"
+           android:textColor="#FFFFFF"
+           android:textStyle="bold"
+           android:text="History  Results"
+           />
+   </LinearLayout>
+
+
+</RelativeLayout>
